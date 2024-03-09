@@ -23,3 +23,6 @@ Welcome to OOTD, your personal style advisor exclusively designed for men! This 
 - Check our [Frequently Asked Questions](#) section for quick solutions to common queries.
 - If you encounter any issues, refer to the troubleshooting guide for assistance.
 
+## Contact Us
+
+If you have any questions, concerns, or need assistance with OOTD - Outfit of the Day, feel free to reach out to our support team. We're here to help!
