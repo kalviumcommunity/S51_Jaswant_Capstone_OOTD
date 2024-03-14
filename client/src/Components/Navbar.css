@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: #1610e1; /* Green background */
+    padding: 15px 0; /* Vertical padding only */
+    display: flex;
+    justify-content: flex-end; /* Align items to the start of the navbar */
+    align-items: center;
+}
+
+.navbar-brand {
+    color: #FFF;
+    text-decoration: none;
+    font-size: 1.5rem; /* Increase font size for better visibility */
+    font-weight: bold; /* Make the brand text bold */
+}
+
+.navbar-nav {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    align-items: center; /* Center items vertically */
+}
+
+.nav-item {
+    margin-right: 15px; /* Increase spacing between nav items */
+}
+
+.nav-link {
+    color: #FFF;
+    text-decoration: none;
+    font-size: 1.1rem; /* Adjust font size for better readability */
+    transition: color 0.3s; /* Add smooth transition effect on color change */
+    font-size: 150%;
+}
+
+.nav-link:hover {
+    color: #ee0808; /* Yellow color on hover */
+    transition: color 0.3s; /* Add smooth transition effect on color change */
+}
