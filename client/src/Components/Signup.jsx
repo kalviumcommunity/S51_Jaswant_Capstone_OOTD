@@ -1,20 +1,20 @@
 import React, { useState } from 'react';
-import "./Login.css"
+import "./Signup.css"
 import { Link } from 'react-router-dom';
 
-function Login() {
+function Signup() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
   const handleSubmit = (event) => {
     event.preventDefault();
     console.log(email, password);
-
+    // Here you can add code to handle signup logic, such as sending data to a backend server
   };
 
   return (
-    <div className="login-container">
-      <h2>Login</h2>
+    <div className="signup-container">
+      <h2>Sign Up</h2>
       <form onSubmit={handleSubmit}>
         <div className="form-group">
           <label htmlFor="email">Email:</label>
@@ -36,13 +36,13 @@ function Login() {
             required
           />
         </div>
-        <button type="submit">Login</button>
+        <button type="submit">Sign Up</button>
       </form>
       <p>
-        Don't have an account? <a href="/signup">Sign up</a>
+        Already have an account? <Link to="/login">Login</Link>
       </p>
     </div>
   );
 }
 
-export default Login;
+export default Signup;
