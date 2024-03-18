@@ -4,40 +4,41 @@ body {
 }
 
 .navbar {
-    background-color: #1610e1; /* Green background */
-    padding: 15px 0; /* Vertical padding only */
+    background-color: #f11505af; 
+    padding: 15px 0; 
     display: flex;
-    justify-content: flex-end; /* Align items to the start of the navbar */
+    justify-content: flex-end; 
     align-items: center;
 }
 
 .navbar-brand {
     color: #FFF;
     text-decoration: none;
-    font-size: 1.5rem; /* Increase font size for better visibility */
-    font-weight: bold; /* Make the brand text bold */
+    font-size: 1.5rem; 
+    font-weight: bold; 
 }
 
 .navbar-nav {
     list-style: none;
     padding: 0;
     display: flex;
-    align-items: center; /* Center items vertically */
+    align-items: center; 
 }
 
 .nav-item {
-    margin-right: 15px; /* Increase spacing between nav items */
+    margin-right: 15px; 
 }
 
 .nav-link {
-    color: #FFF;
     text-decoration: none;
-    font-size: 1.1rem; /* Adjust font size for better readability */
-    transition: color 0.3s; /* Add smooth transition effect on color change */
+    font-size: 1.1rem; 
+    transition: color 0.3s;
+    color: black; 
+    font-weight: bold;
     font-size: 150%;
 }
 
 .nav-link:hover {
-    color: #ee0808; /* Yellow color on hover */
-    transition: color 0.3s; /* Add smooth transition effect on color change */
+    color: #ee0808; 
+    transition: color 0.3s; 
 }
