@@ -9,7 +9,7 @@ function Signup() {
   const handleSubmit = (event) => {
     event.preventDefault();
     console.log(email, password);
-    // Here you can add code to handle signup logic, such as sending data to a backend server
+  
   };
 
   return (
