@@ -1,13 +1,13 @@
-/* CSS for Home Page */
+
 h1 {
-    font-size: 2.5em; /* Adjust the font size as needed */
-    color: #333; /* Adjust the color as needed */
-    text-align: center; /* Center the text horizontally */
+    font-size: 2.5em; 
+    color: #333; 
+    text-align: center; 
 }
 
 p {
-    font-size: 2.0em; /* Adjust the font size as needed */
-    color: #444; /* Darker color */
-    margin-top: 20px; /* Adjust the top margin as needed */
-    text-align: center; /* Center the text horizontally */
+    font-size: 2.0em;
+    color: #444; 
+    margin-top: 20px;
+    text-align: center; 
 }
