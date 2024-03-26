@@ -1,13 +1,25 @@
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
 h1 {
-    font-size: 2.5em; 
-    color: #333; 
-    text-align: center; 
+    font-size: 2.5em;
+    color: #000000;
+    text-align: center;
+    animation: fadeInUp 1s ease-out forwards;
 }
 
 p {
     font-size: 2.0em;
-    color: #444; 
+    color: #000000;
     margin-top: 20px;
-    text-align: center; 
+    text-align: center;
+    animation: fadeInUp 1.5s ease-out forwards;
 }
