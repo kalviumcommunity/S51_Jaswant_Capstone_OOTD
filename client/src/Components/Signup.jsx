@@ -1,14 +1,17 @@
 import React, { useState } from 'react';
 import "./Signup.css"
-import { Link } from 'react-router-dom';
+import { Link,useNavigate } from 'react-router-dom';
 
-function Signup() {
+function Signup({setIsLoggedIn}) {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const navigate = useNavigate()
 
   const handleSubmit = (event) => {
     event.preventDefault();
     console.log(email, password);
+    setIsLoggedIn (true);
+    navigate("/")
   
   };
 

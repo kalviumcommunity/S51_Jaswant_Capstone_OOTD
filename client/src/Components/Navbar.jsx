@@ -1,7 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.css'; 
-const Navbar = () => {
+const Navbar = ({isLoggedIn, setIsLoggedIn}) => {
+    const handleLogout = () => {
+        setIsLoggedIn(false);
+
+    };
     return (
         <nav className="navbar">
             <ul className="navbar-nav">
