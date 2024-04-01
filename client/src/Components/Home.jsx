@@ -1,12 +1,25 @@
 import React from 'react';
 import "./Home.css"
+import Navbar from './Navbar';
 
 const Home = () => {
     return (
+        <>
         <div>
-            <h1>Welcome to Outfit Of The Day</h1>
-            <p>"What you wear is how you present yourself to the world, especially today,<br></br> when human contacts are so quick. Fashion is instant language."</p>
-            <footer className="home-footer">
+            <Navbar />
+            <div className='main'>
+                <div className="main-left">
+
+                </div>
+                <div className="main-right">
+                    <h1>Welcome to Outfit Of The Day</h1>
+                    <p>"We're here to bring your costume vision to life. Begin your adventure with us today by selecting the perfect attire for your special event."</p>
+                    <button className='choose'>Choose My Outfit</button>
+                </div>
+               
+            </div>
+        </div>
+        <footer className="home-footer">
                 <p>&copy; {(new Date().getFullYear())} Outfit Of The Day. All rights reserved.</p>
                 <p>Follow us on:
                     <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"> Twitter</a>,
@@ -14,7 +27,7 @@ const Home = () => {
                     <a href="https://instagram.com" target="_blank" rel="noopener noreferrer"> Instagram</a>
                 </p>
             </footer>
-        </div>
+        </>
     );
 };
 
