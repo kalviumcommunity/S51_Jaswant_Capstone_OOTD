@@ -1,15 +1,22 @@
 import React from 'react';
 import "./Home.css"
 import Navbar from './Navbar';
-
+import image1 from '../assets/pic1.jpg'
+import image2 from '../assets/pic2.jpg'
+import image3 from '../assets/pic3.jpg'
 const Home = () => {
     return (
         <>
         <div>
-            <Navbar />
+          
             <div className='main'>
                 <div className="main-left">
-
+                <div>
+                <img className='img3' src={image3} alt="" />
+                <img className='img1' src={image1} alt="" />
+                </div>
+                <img className='img2' src={image2} alt="" />
+             
                 </div>
                 <div className="main-right">
                     <h1>Welcome to Outfit Of The Day</h1>
