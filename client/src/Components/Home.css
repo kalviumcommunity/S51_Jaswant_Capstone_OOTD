@@ -160,8 +160,39 @@ div.main-right {
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-.img4 , .img5 , .img6{
+.img4,
+.img5,
+.img6 {
     height: 600px;
     width: 350px;
-    border-radius: 5%;
+    border-radius: 2%;
+    margin-left: 150px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 3px 6px;
+    transition: transform 0.5s ease;
 }
+
+.img4:hover,
+.img5:hover,
+.img6:hover {
+    transform: scale(1.1);
+}
+
+.blackcomb {
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+
+.blackcomb .description {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid layout */
+    gap: 20px; /* Add spacing between paragraphs */
+    justify-content: center; /* Center align items */
+}
+
+
+
+
+
+  
