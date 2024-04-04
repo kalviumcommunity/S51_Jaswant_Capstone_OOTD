@@ -151,3 +151,17 @@ div.main-right {
     box-shadow: rgba(0, 0, 0, 0.3) 0px 3px 6px;
     border-radius: 5%;
 }
+
+.thick-dark-line {
+    border: none;
+    height: 2px; 
+    background-color: #000; 
+    margin-top: 20px; 
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.img4 , .img5 , .img6{
+    height: 600px;
+    width: 350px;
+    border-radius: 5%;
+}

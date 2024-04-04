@@ -1,14 +1,16 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom'; 
 import "./Home.css";
-import Navbar from './Navbar';
 import image1 from '../assets/pic1.jpg';
 import image2 from '../assets/pic2.jpg';
 import image3 from '../assets/pic3.jpg';
+import image4 from '../assets/pic4.jpeg';
+import image5 from '../assets/pic5.jpeg';
+import image6 from '../assets/pic6.jpeg';
 
 const Home = () => {
     let navigate = useNavigate(); 
-
+    
     const navigateToNewPage = () => {
         navigate('/Mainone'); 
     };
@@ -28,18 +30,20 @@ const Home = () => {
                         <h1>Welcome to Outfit Of The Day</h1>
                         <p>"We're here to bring your costume vision to life. Begin your adventure with us today by selecting the perfect attire for your special event."</p>
                         <button className='choose' onClick={navigateToNewPage}>Choose My Outfit</button>
-                            
+                    </div>
+                </div>
+                <hr className="thick-dark-line" /> 
+
+                <div className= 'blackcomb' >
+                    <h1>Black Outfit Combinations</h1>
+                    <div>
+                    <img className='img4' src={image4} alt="" />
+                    <img className='img5' src={image5} alt="" />
+                    <img className='img6' src={image6} alt="" />
                     </div>
                 </div>
             </div>
-            {/* <footer className="home-footer">
-                <p>&copy; {new Date().getFullYear()} Outfit Of The Day. All rights reserved.</p>
-                <p>Follow us on:
-                    <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"> Twitter</a>,
-                    <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"> Facebook</a>,
-                    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer"> Instagram</a>
-                </p>
-            </footer> */}
+          
         </>
     );
 };
