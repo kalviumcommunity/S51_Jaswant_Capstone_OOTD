@@ -12,7 +12,6 @@ function Login({setIsLoggedIn}) {
     console.log(email, password);
     setIsLoggedIn(true);
     navigate("/");
-
   };
 
   return (
@@ -41,8 +40,11 @@ function Login({setIsLoggedIn}) {
         </div>
         <button type="submit">Login</button>
       </form>
+      <div className="forgot-password">
+        <Link to="/forgot-password">Forgot Password?</Link>
+      </div>
       <p>
-        Don't have an account? <a href="/signup">Sign up</a>
+        Don't have an account? <Link to="/signup">Sign up</Link>
       </p>
     </div>
   );
