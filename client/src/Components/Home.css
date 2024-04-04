@@ -177,6 +177,22 @@ div.main-right {
     transform: scale(1.1);
 }
 
+.blackcomb {
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+
+.blackcomb .description {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid layout */
+    gap: 20px; /* Add spacing between paragraphs */
+    justify-content: center; /* Center align items */
+}
+
+
+
 
 
   

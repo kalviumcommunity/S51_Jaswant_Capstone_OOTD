@@ -54,6 +54,17 @@ const Home = () => {
                         <img className={`img6 ${inViewImg6 ? 'active' : ''}`} src={image6} alt="" ref={refImg6} />
                     </div>
                 </div>
+                <div className="description">
+        <p>
+            <strong>Black Shirt and Grey Pant Combination:</strong> Elevate your style with our sophisticated black shirt paired with sleek grey pants. This timeless combination exudes confidence and refinement, perfect for both casual outings and formal occasions. Embrace versatility and elegance with this classic ensemble that effortlessly transitions from day to night.
+        </p>
+        <p>
+            <strong>Black Shirt and Black Pant:</strong> Embrace the allure of monochrome with our sleek black shirt and matching black pants. This effortlessly chic combination epitomizes modern sophistication, offering a sleek and polished look that never goes out of style. Whether for a professional setting or a night out on the town, this ensemble exudes confidence and sophistication.
+        </p>
+        <p>
+            <strong>Black Shirt and Sandal Pant:</strong> Embrace laid-back sophistication with our stylish black shirt paired with trendy sandal pants. This effortlessly cool combination offers a relaxed yet refined aesthetic, perfect for casual gatherings or weekend outings. Add a touch of effortless style to your wardrobe with this versatile ensemble that captures the essence of modern fashion.
+        </p>
+    </div>
             </div>
 
         </>
