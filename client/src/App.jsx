@@ -8,6 +8,7 @@ import Login from "./Components/Login";
 import Signup from "./Components/Signup";
 import Mainpage from "./Components/Mainone";
 import Footer from "./Components/Footer";
+import ForgotPassword from './Components/ForgotPassword';
 
 const App = () => {
   const [IsLoggedIn, setIsLoggedIn] = useState(false);
@@ -21,6 +22,7 @@ const App = () => {
           <Route path="/login" element={<Login setIsLoggedIn={setIsLoggedIn} />} />
           <Route path="/signup" element={<Signup setIsLoggedIn={setIsLoggedIn}/>} />
           <Route path="/Mainone" element={<Mainpage />} />
+          <Route path="/ForgotPassword" element={<ForgotPassword />} />
         </Routes>
         <Footer />
       </Router>
