@@ -41,8 +41,9 @@ function Login({setIsLoggedIn}) {
         <button type="submit">Login</button>
       </form>
       <div className="forgot-password">
-        <Link to="/forgot-password">Forgot Password?</Link>
-      </div>
+       <Link to="/ForgotPassword">Forgot Password?</Link>
+       </div>
+
       <p>
         Don't have an account? <Link to="/signup">Sign up</Link>
       </p>
