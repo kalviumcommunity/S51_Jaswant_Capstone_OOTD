@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import "./ForgotPassword.css"; // Assuming similar styling, potentially shared with Login.css
 import { Link, useNavigate } from 'react-router-dom';
 
 function ForgotPassword() {
