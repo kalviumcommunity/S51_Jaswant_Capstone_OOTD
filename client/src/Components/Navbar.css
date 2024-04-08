@@ -4,11 +4,15 @@ body {
     background-color: #ffffffd2;
 }
 
+.nav-logo {
+    max-width: 400px; 
+}
+
 .navbar {
     background-color: #012448f8; 
     padding: 30px 0; 
     display: flex;
-    justify-content: flex-end; 
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -44,3 +48,5 @@ body {
     color: #ffffff; 
     transition: color 0.3s; 
 }
+
+
