@@ -8,6 +8,11 @@ import image3 from '../assets/pic3.jpg';
 import image4 from '../assets/pic4.jpeg';
 import image5 from '../assets/pic5.jpeg';
 import image6 from '../assets/pic6.jpeg';
+import image7 from '../assets/pic7.jpeg';
+import image8 from '../assets/pic8.jpeg';
+import image9 from '../assets/pic9.jpeg';
+import image10 from '../assets/pic10.jpeg';
+import image11 from '../assets/pic11.jpeg';
 
 const Home = () => {
     let navigate = useNavigate();
@@ -26,6 +31,30 @@ const Home = () => {
     const [refImg6, inViewImg6] = useInView({
         threshold: 0.5,
     });
+
+    const [refImg7, inViewImg7] = useInView({
+        threshold: 0.5,
+    });
+
+    const [refImg8, inViewImg8] = useInView({
+        threshold: 0.5,
+    });
+
+    const [refImg9, inViewImg9] = useInView({
+        threshold: 0.5,
+    });
+
+    
+    const [refImg10, inViewImg10] = useInView({
+        threshold: 0.5,
+    });
+
+
+    const [refImg11, inViewImg11] = useInView({
+        threshold: 0.5,
+    });
+
+
 
     return (
         <>
@@ -65,6 +94,20 @@ const Home = () => {
             <strong>Black Shirt and Sandal Pant:</strong> Embrace laid-back sophistication with our stylish black shirt paired with trendy sandal pants. This effortlessly cool combination offers a relaxed yet refined aesthetic, perfect for casual gatherings or weekend outings. Add a touch of effortless style to your wardrobe with this versatile ensemble that captures the essence of modern fashion.
         </p>
     </div>
+
+    <hr className="thick-dark-line" />
+    <div className='whitecomb'>
+                    <h1>White Outfit Combinations</h1>
+                    <div className='white-img'>
+
+                        <img className={`img7 ${inViewImg7 ? 'active' : ''}`} src={image7} alt="" ref={refImg7} />
+                        <img className={`img8 ${inViewImg8 ? 'active' : ''}`} src={image8} alt="" ref={refImg8} />
+                        <img className={`img9 ${inViewImg9 ? 'active' : ''}`} src={image9} alt="" ref={refImg9} />
+                        <img className={`img10 ${inViewImg10 ? 'active' : ''}`} src={image10} alt="" ref={refImg10} />
+                        <img className={`img11 ${inViewImg11 ? 'active' : ''}`} src={image11} alt="" ref={refImg11} />
+
+                    </div>
+                </div>
             </div>
 
         </>

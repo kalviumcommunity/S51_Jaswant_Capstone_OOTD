@@ -186,12 +186,40 @@ div.main-right {
 
 .blackcomb .description {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid layout */
-    gap: 20px; /* Add spacing between paragraphs */
-    justify-content: center; /* Center align items */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    gap: 20px; 
+    justify-content: center; 
 }
 
+.img7,
+.img8,
+.img9,
+.img10,
+.img11 {
+    height: 400px;
+    width: 250px;
+    border-radius: 2%;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 3px 6px;
+    transition: transform 0.5s ease;
+}
 
+.img7:hover,
+.img8:hover,
+.img9:hover,
+.img10:hover,
+.img11:hover {
+
+    transform: scale(1.1);
+}
+
+.white-img{
+
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    padding: 10px;
+
+
+}
 
 
 
