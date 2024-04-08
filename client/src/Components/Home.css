@@ -199,7 +199,6 @@ div.main-right {
     height: 400px;
     width: 250px;
     border-radius: 2%;
-    /* margin-left: 150px; */
     box-shadow: rgba(0, 0, 0, 0.3) 0px 3px 6px;
     transition: transform 0.5s ease;
 }
@@ -209,10 +208,12 @@ div.main-right {
 .img9:hover,
 .img10:hover,
 .img11:hover {
+
     transform: scale(1.1);
 }
 
 .white-img{
+
     display: grid;
     grid-template-columns: repeat(5,1fr);
     padding: 10px;

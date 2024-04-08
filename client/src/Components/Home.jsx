@@ -44,9 +44,11 @@ const Home = () => {
         threshold: 0.5,
     });
 
+    
     const [refImg10, inViewImg10] = useInView({
         threshold: 0.5,
     });
+
 
     const [refImg11, inViewImg11] = useInView({
         threshold: 0.5,
@@ -97,11 +99,13 @@ const Home = () => {
     <div className='whitecomb'>
                     <h1>White Outfit Combinations</h1>
                     <div className='white-img'>
+
                         <img className={`img7 ${inViewImg7 ? 'active' : ''}`} src={image7} alt="" ref={refImg7} />
                         <img className={`img8 ${inViewImg8 ? 'active' : ''}`} src={image8} alt="" ref={refImg8} />
                         <img className={`img9 ${inViewImg9 ? 'active' : ''}`} src={image9} alt="" ref={refImg9} />
                         <img className={`img10 ${inViewImg10 ? 'active' : ''}`} src={image10} alt="" ref={refImg10} />
                         <img className={`img11 ${inViewImg11 ? 'active' : ''}`} src={image11} alt="" ref={refImg11} />
+
                     </div>
                 </div>
             </div>
