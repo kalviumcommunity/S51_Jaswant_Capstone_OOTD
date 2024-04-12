@@ -1,9 +1,46 @@
 import React from 'react';
+import './Mainone.css'; // Import CSS file for styling
+import birthday from "../assets/birthday.png"
+import office from "../assets/office.jpg"
+import interview from "../assets/Interview.png"
+import wedding from "../assets/wedding.jpg"
+import relegious from "../assets/relegious.webp"
+import college from "../assets/college.jpg"
+import hangouts from "../assets/hangouts.jpg"
+
 
 const Mainone = () => {
     return (
-        <div>
-            {}
+        <div className="main-container">
+            <button className="occbutton">
+            <img className='birthday' src={birthday} alt="" />
+                Birthday Parties
+            </button>
+            <button className="occbutton">
+               <img className="office" src={office} alt='' />
+                Office
+            </button>
+            <button className="occbutton">
+            <img className="interview" src={interview} alt='' />
+                Interview
+            </button>
+            <button className="occbutton">
+            <img className="college" src={college} alt='' />
+                College wear
+            </button>
+            <button className="occbutton">
+            <img className="wedding" src={wedding} alt='' />
+                Wedding party
+            </button>
+            <button className="occbutton">
+            <img className="relegious" src={relegious} alt='' />
+                Religious Occasions
+            </button>
+            <button className="occbutton">
+            <img className="hangouts" src={hangouts} alt='' />
+                Casual Hangouts
+            </button>
+            {/* Add similar buttons for other options */}
         </div>
     );
 };
