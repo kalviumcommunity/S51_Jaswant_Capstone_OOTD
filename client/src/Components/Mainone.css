@@ -19,6 +19,7 @@
     font-size: 20px;
     font-family:'Courier New', Courier, monospace;
     font-weight: bold;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 3px 6px;
 }
 
 .occbutton:hover {
