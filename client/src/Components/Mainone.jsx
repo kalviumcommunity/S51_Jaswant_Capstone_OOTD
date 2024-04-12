@@ -7,6 +7,7 @@ import wedding from "../assets/wedding.jpg"
 import relegious from "../assets/relegious.webp"
 import college from "../assets/college.jpg"
 import hangouts from "../assets/hangouts.jpg"
+import date from "../assets/date.webp"
 
 
 const Mainone = () => {
@@ -26,11 +27,11 @@ const Mainone = () => {
             </button>
             <button className="occbutton">
             <img className="college" src={college} alt='' />
-                College wear
+                College outfit
             </button>
             <button className="occbutton">
             <img className="wedding" src={wedding} alt='' />
-                Wedding party
+                Wedding Parties
             </button>
             <button className="occbutton">
             <img className="relegious" src={relegious} alt='' />
@@ -39,6 +40,10 @@ const Mainone = () => {
             <button className="occbutton">
             <img className="hangouts" src={hangouts} alt='' />
                 Casual Hangouts
+            </button>
+            <button className="occbutton">
+            <img className="date" src={date} alt='' />
+                Dating
             </button>
             {/* Add similar buttons for other options */}
         </div>

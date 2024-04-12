@@ -7,7 +7,7 @@ import instagramLogo from '../assets/insta.png'; // import Instagram logo image
 const Footer = () => {
     return (
         <footer className="home-footer">
-            <p>&copy; {new Date().getFullYear()} Outfit Of The Day. All rights reserved.</p>
+            <p>&copy; {new Date().getFullYear()} Outfit Of The Day. All rights reserved. </p>
            
             <div className='sociallogo'>
             <p>Follow us on:</p>
