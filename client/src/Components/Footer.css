@@ -1,8 +1,15 @@
 .sociallogo {
-    height: 50px;
+    height: 40px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 }
 
+.home-footer{
+    background-color: #012448f8;
+}
+
+.foot{
+    color: rgb(255, 217, 0);
+}
