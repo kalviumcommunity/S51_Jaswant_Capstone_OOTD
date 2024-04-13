@@ -10,6 +10,10 @@ import Mainpage from "./Components/Mainone";
 import Footer from "./Components/Footer";
 import ForgotPassword from './Components/ForgotPassword';
 import { BirthdayParties } from './Components/BirthdayParties';
+import { Office } from './Components/Office';
+import { Interview } from './Components/Interview';
+import { College } from './Components/College';
+
 
 const App = () => {
   const [IsLoggedIn, setIsLoggedIn] = useState(false);
@@ -25,6 +29,9 @@ const App = () => {
           <Route path="/Mainone" element={<Mainpage />} />
           <Route path="/ForgotPassword" element={<ForgotPassword />} />
           <Route path="/BirthdayParties" element={<BirthdayParties/>}/>
+          <Route path='/Office' element={<Office/>}/>
+          <Route path='/Interview' element={<Interview/>}/>
+          <Route path='/College' element={<College/>}/>
         </Routes>
         <Footer />
       </Router>

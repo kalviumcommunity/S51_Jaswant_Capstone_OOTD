@@ -20,18 +20,24 @@ const Mainone = () => {
                     Birthday Parties
                 </button>
             </Link>
-            <button className="occbutton">
+         <Link to="/Office"><button className="occbutton">
                <img className="office" src={office} alt='' />
                 Office
             </button>
+         </Link>
+            <Link to="/Interview">
             <button className="occbutton">
             <img className="interview" src={interview} alt='' />
                 Interview
             </button>
-            <button className="occbutton">
+            </Link>
+           <Link to='/College'>
+           <button className="occbutton">
             <img className="college" src={college} alt='' />
                 College outfit
             </button>
+           </Link>
+           
             <button className="occbutton">
             <img className="wedding" src={wedding} alt='' />
                 Wedding Parties
