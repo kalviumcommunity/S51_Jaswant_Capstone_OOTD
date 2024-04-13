@@ -8,15 +8,18 @@ import relegious from "../assets/relegious.webp"
 import college from "../assets/college.jpg"
 import hangouts from "../assets/hangouts.jpg"
 import date from "../assets/date.webp"
+import { Link } from 'react-router-dom';
 
 
 const Mainone = () => {
     return (
         <div className="main-container">
+            <Link to="/BirthdayParties">
             <button className="occbutton">
-            <img className='birthday' src={birthday} alt="" />
-                Birthday Parties
-            </button>
+                <img className='birthday' src={birthday} alt="" />
+                    Birthday Parties
+                </button>
+            </Link>
             <button className="occbutton">
                <img className="office" src={office} alt='' />
                 Office
