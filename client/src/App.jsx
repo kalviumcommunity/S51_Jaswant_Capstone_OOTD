@@ -10,9 +10,13 @@ import Mainpage from "./Components/Mainone";
 import Footer from "./Components/Footer";
 import ForgotPassword from './Components/ForgotPassword';
 import { BirthdayParties } from './Components/BirthdayParties';
-import { Office } from './Components/Office';
+import { Office } from './Components/office';
 import { Interview } from './Components/Interview';
 import { College } from './Components/College';
+import { Wedding } from './Components/Wedding';
+import { Relegious } from './Components/Relegious';
+import { Casualout } from './Components/Casualout';
+import { Dating } from './Components/Dating';
 
 
 const App = () => {
@@ -32,6 +36,14 @@ const App = () => {
           <Route path='/Office' element={<Office/>}/>
           <Route path='/Interview' element={<Interview/>}/>
           <Route path='/College' element={<College/>}/>
+          <Route path='/Wedding' element={<Wedding/>}/>
+          <Route path='/Relegious' element={<Relegious/>}/>
+          <Route path='/Casualout' element={<Casualout/>}/>
+          <Route path='/Dating' element={<Dating/>}/>
+
+          
+
+          
         </Routes>
         <Footer />
       </Router>
