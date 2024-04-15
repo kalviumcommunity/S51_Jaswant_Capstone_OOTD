@@ -37,23 +37,25 @@ const Mainone = () => {
                 College outfit
             </button>
            </Link>
-           
-            <button className="occbutton">
+            <Link to='/Wedding'> <button className="occbutton">
             <img className="wedding" src={wedding} alt='' />
                 Wedding Parties
             </button>
-            <button className="occbutton">
+            </Link>
+           <Link to='/Relegious'>  <button className="occbutton">
             <img className="relegious" src={relegious} alt='' />
                 Religious Occasions
             </button>
-            <button className="occbutton">
+           </Link>
+          <Link to='/Casualout'><button className="occbutton">
             <img className="hangouts" src={hangouts} alt='' />
                 Casual Hangouts
-            </button>
-            <button className="occbutton">
+            </button></Link>
+            <Link to='/Dating'><button className="occbutton">
             <img className="date" src={date} alt='' />
                 Dating
-            </button>
+            </button></Link>
+            
             {/* Add similar buttons for other options */}
         </div>
     );
