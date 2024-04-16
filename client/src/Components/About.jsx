@@ -12,8 +12,8 @@ const About = () => {
             <p className="about-paragraph">Explore our wide range of outfit options tailored to your specific needs and preferences. Save your favorite looks for future reference, and easily share your selected outfits with friends or on social media to inspire others with your impeccable style.</p>
             <p className="about-paragraph">If you ever have any questions, concerns, or need assistance while using OOTD, our dedicated support team is here to help. Whether you're seeking fashion advice or technical support, we're committed to ensuring that your experience with OOTD is nothing short of exceptional.</p>
             <p className="about-paragraph">Thank you for choosing OOTD - Outfit of the Day. Let's elevate your style together!</p>
-            
-            {/* FAQ Section */}
+               
+                      {/* FAQ Section */}
             <h2 className="faq-heading">FAQs and Troubleshooting:</h2>
             <ul className="faq-list">
                 <li>
@@ -24,6 +24,7 @@ const About = () => {
                 </li>
             </ul>
         </div>
+     
     );
 };
 
