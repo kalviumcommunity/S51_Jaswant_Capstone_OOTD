@@ -1,0 +1,23 @@
+.color-buttons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-gap: 20px; 
+}
+
+.combutton {
+    padding: 10px 20px;
+    background-color: #012448f8;
+    border-radius: 10px;
+    color: #ffdd00;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.combutton:hover {
+    background-color: #000000;
+    color: #ffdd00;
+}
