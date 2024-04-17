@@ -25,7 +25,7 @@ const Navbar = ({isLoggedIn, setIsLoggedIn}) => {
                     <Link to="/about" className="nav-link">About</Link>
                 </li>
                 <li className="nav-item">
-                    <Link to="/features" className="nav-link">Features</Link>
+                    <Link to="/features" className="nav-link">Combinations</Link>
                 </li>
                 <li className="nav-item">
                     <Link to="/Login" className="nav-link">Login</Link>

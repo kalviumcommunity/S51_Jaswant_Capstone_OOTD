@@ -36,13 +36,11 @@ body {
 }
 
 .nav-link {
-    text-decoration: none;
-    font-size: 1.1rem; 
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     transition: color 0.3s;
     color:  rgb(255, 217, 0); 
     font-weight: bold;
-    font-size: 200%;
+    font-size: 180%;
 }
 
 .nav-link:hover {
