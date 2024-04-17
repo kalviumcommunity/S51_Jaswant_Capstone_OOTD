@@ -32,14 +32,14 @@
 }
 
 h1 {
-    font-size: 2.5em;
+    font-size: 2em;
     color: #000000;
     text-align: center;
     animation: fadeInUp 1s ease-out forwards;
 }
 
 p {
-    font-size: 2.0em;
+    font-size: 1.5em;
     color: #000000;
     margin-top: 20px;
     text-align: center;
@@ -126,8 +126,8 @@ div.main-right {
 
 .img3 {
     margin-right: 40px;
-    height: 450px;
-    width: 400px;
+    height: 350px;
+    width: 300px;
     animation: fadeInRight 1.5s ease-out forwards;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 3px 6px;
     border-radius: 5%;
@@ -136,17 +136,17 @@ div.main-right {
 
 .img1 {
     position: relative;
-    top: 100px;
-    height: 405px;
-    width: 250px;
+    top: 80px;
+    height: 285px;
+    width: 160px;
     border-radius: 5%;
     animation: fadeInRight 1.5s ease-out forwards;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 3px 6px;
 }
 
 .img2 {
-    height: 300px;
-    width: 420px;
+    height: 200px;
+    width: 320px;
     animation: fadeInRight 1.5s ease-out forwards;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 3px 6px;
     border-radius: 5%;
@@ -163,8 +163,8 @@ div.main-right {
 .img4,
 .img5,
 .img6 {
-    height: 600px;
-    width: 350px;
+    height: 400px;
+    width: 250px;
     border-radius: 2%;
     margin-left: 150px;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 3px 6px;
@@ -186,7 +186,7 @@ div.main-right {
 
 .blackcomb .description {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); 
     gap: 20px; 
     justify-content: center; 
 }
@@ -196,8 +196,8 @@ div.main-right {
 .img9,
 .img10,
 .img11 {
-    height: 400px;
-    width: 250px;
+    height: 350px;
+    width: 200px;
     border-radius: 2%;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 3px 6px;
     transition: transform 0.5s ease;
@@ -215,8 +215,9 @@ div.main-right {
 .white-img{
 
     display: grid;
-    grid-template-columns: repeat(5,1fr);
+    grid-template-columns: repeat(5,250px);
     padding: 10px;
+    margin-left: 30px;
 
 
 }
