@@ -1,17 +1,8 @@
 import React from 'react';
-import "./Feature.css"
+import "./Feature.css";
+import { Link } from 'react-router-dom';
 
 const Feature = () => {
-    // Define an array of color categories
-    const colorCategories = [
-        'Black Combinations',
-        'White Combinations',
-        'Red Combinations',
-        'Yellow Combinations',
-        'Blue Combinations',
-        'Brown Combinations'
-    ];
-
     const handleButtonClick = (category) => {
         console.log(`Clicked on ${category}`);
     };
@@ -20,11 +11,38 @@ const Feature = () => {
         <div>
             <h2>Combinations</h2>
             <div className="color-buttons">
-                {colorCategories.map((category, index) => (
-                    <button className='combutton' key={index} onClick={() => handleButtonClick(category)}>
-                        {category}
-                    </button>
-                ))}
+
+            <Link to='/Black'>
+                <button className='combutton' onClick={() => handleButtonClick('Black Combinations')}>
+                    Black Combinations
+                </button>
+            </Link>
+            <Link to='/White'>
+                <button className='combutton' onClick={() => handleButtonClick('White Combinations')}>
+                    White Combinations
+                </button>
+            </Link>
+            <Link to='/Red'> 
+                <button className='combutton' onClick={() => handleButtonClick('Red Combinations')}>
+                    Red Combinations
+                </button>
+            </Link>
+            <Link to='/Yellow'> 
+                <button className='combutton' onClick={() => handleButtonClick('Yellow Combinations')}>
+                    Yellow Combinations
+                </button>
+            </Link>
+            <Link to='/Blue'>  
+                <button className='combutton' onClick={() => handleButtonClick('Blue Combinations')}>
+                    Blue Combinations
+                </button>
+            </Link>
+            <Link to='/Brown'>
+                <button className='combutton' onClick={() => handleButtonClick('Brown Combinations')}>
+                    Brown Combinations
+                </button>
+            </Link> 
+               
             </div>
         </div>
     );
