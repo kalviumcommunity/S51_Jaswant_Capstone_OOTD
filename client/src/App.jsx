@@ -17,6 +17,12 @@ import { Wedding } from './Components/Wedding';
 import { Relegious } from './Components/Relegious';
 import { Casualout } from './Components/Casualout';
 import { Dating } from './Components/Dating';
+import { Black } from './Components/Combinations/Black';
+import { White } from './Components/Combinations/White';
+import { Red } from './Components/Combinations/Red';
+import { Yellow } from './Components/Combinations/Yellow';
+import { Blue } from './Components/Combinations/Blue';
+import { Brown } from './Components/Combinations/Brown';
 
 
 const App = () => {
@@ -40,9 +46,12 @@ const App = () => {
           <Route path='/Relegious' element={<Relegious/>}/>
           <Route path='/Casualout' element={<Casualout/>}/>
           <Route path='/Dating' element={<Dating/>}/>
-
-          
-
+          <Route path='/Black' element={<Black/>} />
+          <Route path='/White' element={<White/>} />
+          <Route path='/Red' element={<Red/>} />
+          <Route path='/Yellow' element={<Yellow/>} />
+          <Route path='/Blue' element={<Blue/>} />
+          <Route path='/Brown' element={<Brown/>} />
           
         </Routes>
         <Footer />
