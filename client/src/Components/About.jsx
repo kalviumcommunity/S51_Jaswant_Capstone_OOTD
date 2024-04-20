@@ -2,6 +2,12 @@ import React from 'react';
 import './About.css'; // Import the CSS file
 
 const About = () => {
+    // Function to handle clicking on the feedback button
+    const handleFeedback = () => {
+        // Replace the URL with your feedback form or any preferred method of collecting feedback
+        window.open('https://example.com/feedback', '_blank');
+    };
+
     return (
         <div className="about-container">
             <h2 className="about-heading">About OOTD - Outfit of the Day</h2>
@@ -13,7 +19,7 @@ const About = () => {
             <p className="about-paragraph">If you ever have any questions, concerns, or need assistance while using OOTD, our dedicated support team is here to help. Whether you're seeking fashion advice or technical support, we're committed to ensuring that your experience with OOTD is nothing short of exceptional.</p>
             <p className="about-paragraph">Thank you for choosing OOTD - Outfit of the Day. Let's elevate your style together!</p>
                
-                      {/* FAQ Section */}
+            {/* FAQ Section */}
             <h2 className="faq-heading">FAQs and Troubleshooting:</h2>
             <ul className="faq-list">
                 <li>
@@ -23,8 +29,10 @@ const About = () => {
                     <a href="#troubleshooting">If you encounter any issues, refer to the troubleshooting guide for assistance.</a>
                 </li>
             </ul>
+
+            {/* Feedback Button */}
+            <button className="feedback-button" onClick={handleFeedback}>Give Feedback</button>
         </div>
-     
     );
 };
 
