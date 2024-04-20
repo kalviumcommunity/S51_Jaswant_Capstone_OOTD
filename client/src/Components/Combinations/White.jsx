@@ -5,6 +5,7 @@ import image2 from '../../assets/whiteimage2.jpeg';
 import image3 from '../../assets/whiteimage3.jpeg';
 import image4 from '../../assets/whiteimage4.jpeg';
 import image5 from '../../assets/whiteimage5.jpeg';
+import image6 from '../../assets/Whiteimage6.jpeg';
 
 export const White = () => {
   return (
@@ -14,6 +15,7 @@ export const White = () => {
       <img src={image3} alt="Image 3" className="white-image" />
       <img src={image4} alt="Image 4" className="white-image" />
       <img src={image5} alt="Image 5" className="white-image" />
+      <img src={image6} alt="Image 6" className="white-image" />
     </div>
   );
 };
