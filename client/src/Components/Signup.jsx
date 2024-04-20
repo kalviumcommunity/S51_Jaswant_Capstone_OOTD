@@ -1,18 +1,17 @@
 import React, { useState } from 'react';
 import "./Signup.css"
-import { Link,useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
-function Signup({setIsLoggedIn}) {
+function Signup({ setIsLoggedIn }) {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  const navigate = useNavigate()
+  const navigate = useNavigate();
 
   const handleSubmit = (event) => {
     event.preventDefault();
     console.log(email, password);
-    setIsLoggedIn (true);
-    navigate("/")
-  
+    setIsLoggedIn(true);
+    navigate("/");
   };
 
   return (
@@ -39,7 +38,7 @@ function Signup({setIsLoggedIn}) {
             required
           />
         </div>
-        <button type="submit">Sign Up</button>
+        <button type="submit" className="signup-button">Sign Up</button>
       </form>
       <p>
         Already have an account? <Link to="/login">Login</Link>

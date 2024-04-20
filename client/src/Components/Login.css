@@ -53,6 +53,15 @@ button:hover {
   background-color: #4cae4c;
 }
 
+/* Added styles for login-button */
+.login-button {
+  background-color: #5cb85c;
+}
+
+.login-button:hover {
+  background-color: #4cae4c;
+}
+
 .forgot-password {
   text-align: center;
   margin-top: 10px;
