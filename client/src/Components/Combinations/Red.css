@@ -18,6 +18,11 @@
     height: 300px;
     margin: 10px;
     border-radius: 10px;
-    
+    transition: transform 0.3s ease-in-out;
   }
+  
+  .Red-image:hover {
+    transform: scale(1.1);
+  }
+  
   

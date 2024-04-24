@@ -10,7 +10,10 @@ import image6 from '../../assets/Redimg6.jpeg';
 export const Red = () => {
   return (
     <div className="Red-container"> 
-      <img src={image1} alt="Image 1" className="Red-image" /> 
+    <div className='redimg1'>
+    <img src={image1} alt="Image 1" className="Red-image" /> 
+    </div>
+      {/* <img src={image1} alt="Image 1" className="Red-image" />  */}
       <img src={image2} alt="Image 2" className="Red-image" />
       <img src={image3} alt="Image 3" className="Red-image" />
       <img src={image4} alt="Image 4" className="Red-image" />
