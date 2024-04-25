@@ -13,7 +13,9 @@ import { Link } from 'react-router-dom';
 
 const Mainone = () => {
     return (
-        <div className="main-container">
+        <>
+        <h1>Choose your Occasion</h1>
+         <div className="main-container">
             <Link to="/BirthdayParties">
             <button className="occbutton">
                 <img className='birthday' src={birthday} alt="" />
@@ -58,6 +60,8 @@ const Mainone = () => {
             
             {/* Add similar buttons for other options */}
         </div>
+        </>
+       
     );
 };
 
