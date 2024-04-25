@@ -78,35 +78,36 @@ body {
 .dropdown {
     position: absolute;
     top: 60px;
-  }
-  
-  .dropdown-toggle {
+}
+
+.dropdown-toggle {
     cursor: pointer;
     width: 30px;
     height: 20px;
     position: relative;
-  }
-  
-  .line {
+}
+
+.line {
     width: 100%;
     height: 2px;
     background-color:  rgb(255, 217, 0);
     margin: 4px 0;
-  }
-  
-  .dropdown-menu {
+}
+
+.dropdown-menu {
     display: none;
     position: relative;
-    top: 30px;
+    top: -10px; /* Move menu up to hide it initially */
     right: 60px;
     background-color: #f9f9f9;
     min-width: 120px;
     background-color: #012448f8;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
     z-index: 1;
-  }
-  
-  .dropdown-menu button {
+    transition: top 0.3s ease; /* Apply transition */
+}
+
+.dropdown-menu button {
     color: rgb(255, 217, 0);
     width: 100%;
     padding: 10px;
@@ -114,13 +115,14 @@ body {
     border: none;
     background: none;
     cursor: pointer;
-  }
-  #saveButton{
+}
+
+#saveButton {
     color: #ffffff;
-  }
-  
-  .dropdown:hover .dropdown-menu {
+}
+
+.dropdown:hover .dropdown-menu {
     display: block;
+    top: 0; /* Slide menu down on hover */
     border: 2px solid rgb(255, 217, 0);
-  }
-  
+}

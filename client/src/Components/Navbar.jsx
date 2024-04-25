@@ -41,7 +41,7 @@ const Navbar = ({ isLoggedIn, setIsLoggedIn }) => {
                             <Link to="/Login" className="nav-link">Login</Link>
                             <br />
                             <hr />
-                            <Link className="nav-link">Save</Link>
+                            <Link to='/Saved' className="nav-link">Saved</Link>
                         </div>
                     </div>
 
