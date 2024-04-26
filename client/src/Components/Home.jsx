@@ -13,12 +13,15 @@ import image8 from '../assets/pic8.jpeg';
 import image9 from '../assets/pic9.jpeg';
 import image10 from '../assets/pic10.jpeg';
 import image11 from '../assets/pic11.jpeg';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
     let navigate = useNavigate();
     const navigateToNewPage = () => {
         navigate('/Mainone');
     };
+
+  
 
     const [refImg4, inViewImg4] = useInView({
         threshold: 0.5,
@@ -72,7 +75,10 @@ const Home = () => {
                 <hr className="thick-dark-line" />
 
                 <div className='blackcomb'>
-                    <h1>Black Outfit Combinations</h1>
+                    <Link to='/Black'>
+                     <h1 className='blackcomb'>Black Outfit Combinations </h1>
+                    </Link>
+                   
                     <div>
                         <img className={`img4 ${inViewImg4 ? 'active' : ''}`} src={image4} alt="" ref={refImg4} />
                         <img className={`img5 ${inViewImg5 ? 'active' : ''}`} src={image5} alt="" ref={refImg5} />
@@ -94,7 +100,10 @@ const Home = () => {
                 <hr className="thick-dark-line" />
 
                 <div className='whitecomb'>
+                    <Link to='/White'>
                     <h1>White Outfit Combinations</h1>
+                    </Link>
+                
                     <div className='white-img'>
                         <img className={`img7 ${inViewImg7 ? 'active' : ''}`} src={image7} alt="" ref={refImg7} />
                         <img className={`img8 ${inViewImg8 ? 'active' : ''}`} src={image8} alt="" ref={refImg8} />
