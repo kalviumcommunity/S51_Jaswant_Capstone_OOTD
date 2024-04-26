@@ -20,7 +20,7 @@ import { Dating } from './Components/Dating';
 import { Black } from './Components/Combinations/Black';
 import { White } from './Components/Combinations/White';
 import { Red } from './Components/Combinations/Red';
-import { Yellow } from './Components/Combinations/Yellow';
+import { Green } from './Components/Combinations/Green';
 import { Blue } from './Components/Combinations/Blue';
 import { Brown } from './Components/Combinations/Brown';
 import { Saved } from './Components/Saved';
@@ -50,7 +50,7 @@ const App = () => {
           <Route path='/Black' element={<Black/>} />
           <Route path='/White' element={<White/>} />
           <Route path='/Red' element={<Red/>} />
-          <Route path='/Yellow' element={<Yellow/>} />
+          <Route path='/Green' element={<Green/>} />
           <Route path='/Blue' element={<Blue/>} />
           <Route path='/Brown' element={<Brown/>} />
           <Route path='/Saved' element={<Saved/>}/>

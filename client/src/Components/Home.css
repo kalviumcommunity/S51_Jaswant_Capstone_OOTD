@@ -178,7 +178,7 @@ div.main-right {
 }
 
 .blackcomb {
-    text-align: center;
+    /* text-align: center; */
     margin-top: 20px;
 }
 
@@ -218,7 +218,6 @@ div.main-right {
     grid-template-columns: repeat(5,250px);
     padding: 10px;
     margin-left: 30px;
-
 
 }
 

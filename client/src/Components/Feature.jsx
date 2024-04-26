@@ -27,9 +27,9 @@ const Feature = () => {
                     Red Combinations
                 </button>
             </Link>
-            <Link to='/Yellow'> 
+            <Link to='/Green'> 
                 <button className='combutton' onClick={() => handleButtonClick('Yellow Combinations')}>
-                    Yellow Combinations
+                    Green Combinations
                 </button>
             </Link>
             <Link to='/Blue'>  
