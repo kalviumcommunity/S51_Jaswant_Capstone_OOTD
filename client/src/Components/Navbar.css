@@ -12,10 +12,6 @@ body {
     background-color: #012448f8; 
     padding: 30px 0; 
     display: flex;
-    /* z-index: 20;
-    width: 100%;
-    margin-bottom: 500px;
-    position: fixed; */
     justify-content: space-evenly
 }
 
