@@ -24,6 +24,7 @@ import { Green } from './Components/Combinations/Green';
 import { Blue } from './Components/Combinations/Blue';
 import { Brown } from './Components/Combinations/Brown';
 import { Saved } from './Components/Saved';
+import { Pink } from './Components/Combinations/Pink';
 
 
 const App = () => {
@@ -53,6 +54,7 @@ const App = () => {
           <Route path='/Green' element={<Green/>} />
           <Route path='/Blue' element={<Blue/>} />
           <Route path='/Brown' element={<Brown/>} />
+          <Route path='/Pink' element={<Pink/>}/>
           <Route path='/Saved' element={<Saved/>}/>
           
         </Routes>
