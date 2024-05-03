@@ -126,6 +126,7 @@ div.main-right {
 
 .img3 {
     margin-right: 40px;
+    /* border: 2px solid red; */
     height: 350px;
     width: 300px;
     animation: fadeInRight 1.5s ease-out forwards;
@@ -136,6 +137,7 @@ div.main-right {
 
 .img1 {
     position: relative;
+    /* border: 2px solid red; */
     top: 80px;
     height: 285px;
     width: 160px;
