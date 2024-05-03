@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import "./Login.css"
 import { Link, useNavigate} from 'react-router-dom';
+import axios from "axios"
 
 function Login({setIsLoggedIn}) {
   const [email, setEmail] = useState('');
@@ -9,9 +10,15 @@ function Login({setIsLoggedIn}) {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    console.log(email, password);
-    setIsLoggedIn(true);
-    navigate("/");
+    axios.post('http://localhost:3000/login',{
+                name:email,
+                password:password
+            }).then((response)=>{
+              console.log(email, password);
+              setIsLoggedIn(true);
+              navigate("/");
+        }).catch((error)=>{console.error(error)});
+
   };
 
   return (
