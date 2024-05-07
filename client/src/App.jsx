@@ -10,7 +10,7 @@ import Mainpage from "./Components/Mainone";
 import Footer from "./Components/Footer";
 import ForgotPassword from './Components/ForgotPassword';
 import { BirthdayParties } from './Components/BirthdayParties';
-import { Office } from './Components/office';
+import { Office } from './Components/Office';
 import { Interview } from './Components/Interview';
 import { College } from './Components/College';
 import { Wedding } from './Components/Wedding';
