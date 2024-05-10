@@ -1,19 +1,19 @@
-.Bday-container {
+.occasion-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     }
     
-    .Bdayimg {
-      width: 200px;
-      height: 350px;
+    .occasionimg {
+      width: 250px;
+      height: 400px;
       margin: 10px;
       border-radius: 10px;
       transition: transform 0.3s ease-in-out;
     }
   
-    .Bdayimg:hover{
+    .occasionimg:hover{
       transform: scale(1.1);
     }
     
