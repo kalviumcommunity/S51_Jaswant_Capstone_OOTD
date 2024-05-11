@@ -9,8 +9,8 @@ const {login,signup} = require("./Routes/authserver")
 app.use(bodyParser.json());
 app.use(cors())
 app.use(express.json())
-app.use(login)
-app.use(signup)
+app.use("/",login)
+app.use("/",signup)
 
 
 const port = 3000
