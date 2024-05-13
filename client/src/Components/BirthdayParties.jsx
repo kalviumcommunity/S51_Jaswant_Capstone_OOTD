@@ -4,6 +4,8 @@ import image1 from '../assets/Bdayimg1.jpeg'
 import image2 from '../assets/Bdayimg2.jpeg'
 import image3 from '../assets/Bdayimg3.jpeg'
 import image4 from '../assets/Bdayimg4.jpeg'
+import image5 from '../assets/Bdayimg5.jpeg'
+import image6 from '../assets/Bdayimg6.jpeg'
 
 export const BirthdayParties = () => {
   return (
@@ -14,6 +16,8 @@ export const BirthdayParties = () => {
       <img src={image2} alt="Image1" className="occasionimg" />
       <img src={image3} alt="Image1" className="occasionimg" />
       <img src={image4} alt="Image1" className="occasionimg" />
+      <img src={image5} alt="Image1" className="occasionimg" />
+      <img src={image6} alt="Image1" className="occasionimg" />
     </div>
     </>
   )
