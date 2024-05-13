@@ -14,6 +14,8 @@ import image9 from '../assets/pic9.jpeg';
 import image10 from '../assets/pic10.jpeg';
 import image11 from '../assets/pic11.jpeg';
 import { Link } from 'react-router-dom';
+import Crisp from './Crisp';
+
 
 const Home = () => {
     let navigate = useNavigate();
@@ -127,8 +129,10 @@ const Home = () => {
                         <p>
                             <strong>White Shirt and Sand-colored Pant:</strong> Embrace a laid-back yet stylish vibe with our white shirt paired with sand-colored pants. This relaxed combination is perfect for outdoor gatherings or leisurely weekends, offering a fresh and contemporary look.
                         </p>
+                        <Crisp/>
                     </div>
                 </div>
+
             </div>
         </>
     );
