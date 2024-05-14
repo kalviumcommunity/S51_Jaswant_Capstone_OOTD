@@ -2,6 +2,9 @@ import React, { useState } from 'react';
 import "./Login.css"
 import { Link, useNavigate} from 'react-router-dom';
 import axios from "axios"
+import { signInWithPopup, GoogleAuthProvider } from "firebase/auth";
+import auth from './Firebase.config'
+import googleimg from '../assets/google.png'
 
 function Login({setIsLoggedIn}) {
   const [email, setEmail] = useState('');
@@ -15,12 +18,32 @@ function Login({setIsLoggedIn}) {
                 password:password
             }).then((response)=>{
               console.log(email, password);
-              setIsLoggedIn(true);
+              // setIsLoggedIn(true);
               navigate("/");
         }).catch((error)=>{console.error(error)});
 
   };
-
+   
+  const google = async (e) => {
+    const provider = new GoogleAuthProvider();
+    function setCookie(name, value, daysToExpire) {
+      let date = new Date();
+      date.setTime(date.getTime() + daysToExpire * 24 * 60 * 60 * 1000);
+      document.cookie = name + '=' + value + ';expires=' + date.toUTCString() + ';path=/';
+  }
+    try {
+      const result = await signInWithPopup(auth, provider);
+      console.log(result);
+      setCookie('logedin',true,365)
+      setCookie("username",result.user.displayName,365);
+      setCookie('token', result.user.accessToken,365);
+      setIsLoggedIn(true);
+      navigate('/'); 
+    } catch (error) {
+      console.error(error.message);
+    }
+  }
+   
   return (
     <div className="login-container">
       <h2>Login</h2>
@@ -47,9 +70,13 @@ function Login({setIsLoggedIn}) {
         </div>
         <button type="submit" className="login-button">Login</button>
       </form>
+     
       <div className="forgot-password">
        <Link to="/ForgotPassword">Forgot Password?</Link>
        </div>
+       <div>
+     <img className='g_icon' src={googleimg} onClick={google} alt="google icon" />
+     </div>
 
       <p>
         Don't have an account? <Link to="/signup">Sign up</Link>
