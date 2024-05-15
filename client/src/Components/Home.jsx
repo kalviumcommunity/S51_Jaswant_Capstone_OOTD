@@ -57,6 +57,8 @@ const Home = () => {
         threshold: 0.5,
     });
 
+    
+
     return (
         <>
             <div>

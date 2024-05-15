@@ -7,7 +7,7 @@ import wedding from "../assets/wedding.jpg"
 import relegious from "../assets/relegious.webp"
 import college from "../assets/college.jpg"
 import hangouts from "../assets/hangouts.jpg"
-import date from "../assets/date.webp"
+import date from "../assets/beachimg.webp"
 import { Link } from 'react-router-dom';
 
 
@@ -55,7 +55,7 @@ const Mainone = () => {
             </button></Link>
             <Link to='/Dating'><button className="occbutton">
             <img className="date" src={date} alt='' />
-                Dating
+                Beach
             </button></Link>
             
             {/* Add similar buttons for other options */}
