@@ -35,17 +35,20 @@ export const Wedding = () => {
     </div>
     <hr className="thick-dark-line" />
     <h2>Wedding Reception Outfits</h2>
-    <img src={image8} alt="Image1" className="occasionimg" />
-    <img src={image9} alt="Image1" className="occasionimg" />
-    <img src={image10} alt="Image1" className="occasionimg" />
-    <img src={image11} alt="Image1" className="occasionimg" />
-    <img src={image12} alt="Image1" className="occasionimg" />
-    <img src={image13} alt="Image1" className="occasionimg" />
-    <img src={image14} alt="Image1" className="occasionimg" />
-    <img src={image15} alt="Image1" className="occasionimg" />
-    <img src={image16} alt="Image1" className="occasionimg" />
-    <img src={image17} alt="Image1" className="occasionimg" />
-    <img src={image18} alt="Image1" className="occasionimg" />
+    <div className='occasion-container'>
+      <img src={image8} alt="Image1" className="occasionimg" />
+      <img src={image9} alt="Image1" className="occasionimg" />
+      <img src={image10} alt="Image1" className="occasionimg" />
+      <img src={image11} alt="Image1" className="occasionimg" />
+      <img src={image12} alt="Image1" className="occasionimg" />
+      <img src={image13} alt="Image1" className="occasionimg" />
+      <img src={image14} alt="Image1" className="occasionimg" />
+      <img src={image15} alt="Image1" className="occasionimg" />
+      <img src={image16} alt="Image1" className="occasionimg" />
+      <img src={image17} alt="Image1" className="occasionimg" />
+      <img src={image18} alt="Image1" className="occasionimg" />
+    </div>
+    
     </>
   )
 }

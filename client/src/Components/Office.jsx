@@ -12,7 +12,9 @@ import image9 from '../assets/Officeimg9.jpg';
 
 export const Office = () => {
   return (
-    <div className="combination-container"> 
+     <>
+       <h1>Office Outfit</h1>
+      <div className="combination-container"> 
       <img src={image1} alt="Image 1" className="combination-image" /> 
       <img src={image2} alt="Image 2" className="combination-image" />
       <img src={image3} alt="Image 3" className="combination-image" />
@@ -23,5 +25,7 @@ export const Office = () => {
       <img src={image8} alt="Image 8" className="combination-image" />
       <img src={image9} alt="Image 9" className="combination-image" />
     </div>
+     </>
+   
   );
 };
