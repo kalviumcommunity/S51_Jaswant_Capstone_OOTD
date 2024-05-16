@@ -32,12 +32,12 @@ h2 {
 .form-group input {
   width: 100%;
   padding: 10px;
-  border: 1px solid #ddd;
+  border: 2px solid #ddd;
   border-radius: 3px;
   box-sizing: border-box;
 }
 
-button {
+.login-button {
   width: 100%;
   padding: 10px;
   border: none;
@@ -47,15 +47,19 @@ button {
   font-size: 16px;
   cursor: pointer;
   margin-top: 10px;
+  font: bold;
 }
 
-button:hover {
+.login-button:hover {
   background-color: #4cae4c;
 }
 
 .g_icon{
     height:35px;
-    margin-left: 230px;
+    border: 2px solid rgb(92, 87, 87);
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-left: 220px;
     margin-bottom: 10px;
     cursor: pointer;
 }
@@ -74,11 +78,7 @@ button:hover {
   margin-top: 10px;
 }
 
-.forgot-password a {
+.forgot-password {
   color: #5cb85c;
   text-decoration: none;
-}
-
-.forgot-password a:hover {
-  text-decoration: underline;
 }

@@ -74,7 +74,9 @@ function Login({setIsLoggedIn}) {
       <div className="forgot-password">
        <Link to="/ForgotPassword">Forgot Password?</Link>
        </div>
-       <div>
+       {/* <h5>Login with google</h5> */}
+       <div className='googleimg'>
+        {/* <h5>Google</h5> */}
      <img className='g_icon' src={googleimg} onClick={google} alt="google icon" />
      </div>
 

@@ -95,6 +95,7 @@ div.main-right {
 
 .choose {
     width: 30vw;
+    height: 5vh;
     background-color: #00bfa6;
     color: #fff;
     text-transform: uppercase;
@@ -107,6 +108,7 @@ div.main-right {
     font-weight: bold;
     color:  rgb(255, 217, 0);
     box-shadow: rgba(0, 0, 0, 0.3) 0px 3px 6px;
+    
 }
 
 .choose span:last-child {
@@ -222,6 +224,9 @@ div.main-right {
     margin-left: 30px;
 
 }
+
+
+
 
 
 
