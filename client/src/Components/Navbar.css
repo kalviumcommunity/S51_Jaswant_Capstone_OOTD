@@ -39,6 +39,7 @@ body {
     color:  rgb(255, 217, 0); 
     font-weight: bold;
     font-size: 180%;
+    text-decoration: none;
 }
 
 .nav-link:hover {
