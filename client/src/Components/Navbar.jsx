@@ -13,10 +13,10 @@ const Navbar = ({ isLoggedIn, setIsLoggedIn }) => {
             <li className="nav-item">
                 <img src={logo} alt="Logo" className="nav-logo" />
             </li>
-            <div className="search-bar">
+            {/* <div className="search-bar">
                 <input type="text" placeholder="Search..." className="search-input" />
                 <button className="search-button">Search</button>
-            </div>
+            </div> */}
             <ul className="navbar-nav">
                 <li className="nav-item">
                     <Link to="/" className="nav-link">Home</Link>

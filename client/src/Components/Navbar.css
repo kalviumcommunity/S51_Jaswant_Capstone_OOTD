@@ -5,7 +5,8 @@ body {
 }
 
 .nav-logo {
-    max-width: 300px; 
+    max-width: 300px;
+    /* margin-right: 100px;  */
 }
 
 .navbar {
