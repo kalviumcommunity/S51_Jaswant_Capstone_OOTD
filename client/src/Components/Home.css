@@ -39,12 +39,31 @@ h1 {
 }
 
 p {
-    font-size: 1.5em;
-    color: #000000;
-    margin-top: 20px;
-    text-align: center;
-    animation: fadeInUp 1.5s ease-out forwards;
-}
+    color: #444; /* Darker text color */
+    font-family:'Times New Roman', Times, serif;
+    text-align: center; /* Center align text */
+    margin: 20px auto; /* Margin for spacing and centering */
+    max-width: 600px; /* Maximum width to prevent overly wide text */
+    line-height: 1.6; /* Line height for better readability */
+    border-left: 4px solid black; /* Left border with accent color */
+    padding-left: 10px; /* Padding left of the text */
+    font-size: medium;
+    font-weight:500;
+    transition: border-left-color 0.3s ease; /* Smooth transition for border color */
+  }
+  
+  p:hover {
+    border-left-color: black; /* Accent color change on hover */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    p {
+      font-size: 1.4em; /* Adjust font size for smaller screens */
+      padding: 0 20px; /* Padding for better readability */
+    }
+  }
+  
 
 .home-footer {
     text-align: center;
@@ -98,7 +117,7 @@ div.main-right {
 .choose {
     width: 30vw;
     height: 5vh;
-    background-color: #00bfa6;
+    background-color: #0e2cc1;
     color: #fff;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -120,7 +139,7 @@ div.main-right {
 .choose:hover {
     transition: 0.4s;
     border: 2px dashed #00bfa6;
-    background-color: #fff;
+    background-color:white;
     color: #00bfa6;
 }
 
@@ -167,10 +186,11 @@ div.main-right {
 .img4,
 .img5,
 .img6 {
-    height: 400px;
-    width: 250px;
+    height: 360px;
+    width: 230px;
     border-radius: 2%;
-    margin-left: 150px;
+    margin-right: 20px;
+    margin-left: 100px;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 3px 6px;
     transition: transform 0.5s ease;
 }
@@ -184,6 +204,7 @@ div.main-right {
 .blackcomb {
     /* text-align: center; */
     margin-top: 20px;
+
 }
 
 
