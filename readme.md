@@ -1,9 +1,8 @@
-# OOTD - Outfit of the Day
 
+# OOTD - Outfit of the Day
 Welcome to OOTD, your personal style advisor exclusively designed for men! This website is designed to simplify your fashion choices by providing personalized outfit suggestions based on your appearance, height, skin tone, and chosen occasion.
 
 ## How to Use OOTD.
-
 ### Getting Started :
 - Visit the [OOTD website](#).
 - Create an account or log in if you already have one.
