@@ -1,13 +1,8 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './About.css'; // Import the CSS file
 
 const About = () => {
-    // Function to handle clicking on the feedback button
-    const handleFeedback = () => {
-        // Replace the URL with your feedback form or any preferred method of collecting feedback
-        window.open('https://example.com/feedback', '_blank');
-    };
-
     return (
         <div className="about-container">
             <h2 className="about-heading">About OOTD - Outfit of the Day</h2>
@@ -20,7 +15,7 @@ const About = () => {
             <p className="about-paragraph">Thank you for choosing OOTD - Outfit of the Day. Let's elevate your style together!</p>
                
             {/* FAQ Section */}
-            <h2 className="faq-heading">FAQs and Troubleshooting:</h2>
+            {/* <h2 className="faq-heading">FAQs and Troubleshooting:</h2>
             <ul className="faq-list">
                 <li>
                     <a href="#faq">Check our Frequently Asked Questions section for quick solutions to common queries.</a>
@@ -28,10 +23,14 @@ const About = () => {
                 <li>
                     <a href="#troubleshooting">If you encounter any issues, refer to the troubleshooting guide for assistance.</a>
                 </li>
-            </ul>
+            </ul> */}
 
             {/* Feedback Button */}
-            <button className="feedback-button" onClick={handleFeedback}>Give Feedback</button>
+            <div className="feedback-button">
+                <Link to="/Feedback">
+                    <button type="button">FEEDBACK</button>
+                </Link>
+            </div>
         </div>
     );
 };

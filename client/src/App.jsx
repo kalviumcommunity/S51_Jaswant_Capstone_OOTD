@@ -25,6 +25,7 @@ import { Blue } from './Components/Combinations/Blue';
 import { Brown } from './Components/Combinations/Brown';
 import { Saved } from './Components/Saved';
 import { Pink } from './Components/Combinations/Pink';
+import Feedback from './Components/Feedback';
 // import Crisp  from './Components/Crisp';
 
 
@@ -57,6 +58,8 @@ const App = () => {
           <Route path='/Brown' element={<Brown/>} />
           <Route path='/Pink' element={<Pink/>}/>
           <Route path='/Saved' element={<Saved/>}/>
+          <Route path='/Feedback' element={<Feedback/>}/>
+
           {/* <Route path='/Crisp' element={<Crisp/>}/> */}
           
           

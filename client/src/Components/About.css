@@ -1,28 +1,61 @@
-/* About Component Styles */
 .about-container {
-    max-width: 800px;
-    margin: 0 auto;
-    /* padding: 40px; */
-    background-color: #d5d5d5c1;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.about-heading {
-    font-size: 28px;
-    font-weight: bold;
-    color: #9d3636;
-    margin-bottom: 20px;
-}
-
-.about-paragraph {
-    font-size: 20px;
-    line-height: 1.6;
-    color: #f40404;
-    margin-bottom: 15px;
-}
-
-
-.about-link:hover {
-    text-decoration: underline;
-}
+    padding: 20px;
+  }
+  
+  .about-heading {
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
+  
+  .about-paragraph {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+  
+  .faq-heading {
+    font-size: 1.8em;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .faq-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .faq-list li {
+    margin-bottom: 10px;
+  }
+  
+  .feedback-button {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center; /* Center the button */
+  }
+  
+  .feedback-button button {
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    padding: 15px 30px; /* Larger padding */
+    border: none; /* Remove border */
+    border-radius: 50px; /* Fully rounded corners */
+    font-size: 18px; /* Larger font size */
+    font-weight: bold; /* Bold text */
+    text-transform: uppercase; /* Uppercase text */
+    cursor: pointer; /* Pointer cursor on hover */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: all 0.3s ease; /* Smooth transition for all properties */
+  }
+  
+  .feedback-button button:hover {
+    background-color: #45a049; /* Darker green on hover */
+    transform: translateY(-2px); /* Slight lift on hover */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Slightly bigger shadow */
+  }
+  
+  .feedback-button button:active {
+    background-color: #3e8e41; /* Even darker green when pressed */
+    transform: translateY(0); /* Return to original position */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Return to original shadow */
+  }
+  
