@@ -294,7 +294,8 @@ div.main-right {
     display: none; /* Initially hide the save button */
     position: absolute;
     top: 5px; /* Adjust the positioning as needed */
-    right: 5px; /* Adjust the positioning as needed */
+    right: 10px; /* Adjust the positioning as needed */
+    margin-right: 55px;
     z-index: 1; /* Ensure the save button appears above the image */
 }
 
