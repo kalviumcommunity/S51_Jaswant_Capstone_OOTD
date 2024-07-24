@@ -2,7 +2,6 @@ import React, { useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useInView } from 'react-intersection-observer';
 import "./Home.css";
-import save from "../assets/savebtn.png";
 import image1 from '../assets/pic1.jpg';
 import image2 from '../assets/pic2.jpg';
 import image3 from '../assets/pic3.jpg';
@@ -16,6 +15,7 @@ import image10 from '../assets/pic10.jpeg';
 import image11 from '../assets/pic11.jpeg';
 import { Link } from 'react-router-dom';
 import Crisp from './Crisp'; // Assuming Crisp component for additional content
+import Navbar from './Navbar';
 
 const Home = () => {
     let navigate = useNavigate();
@@ -40,14 +40,10 @@ const Home = () => {
         { src: image11, ref: useRef(null), inView: useInView({ threshold: 0.5 }) }
     ];
 
-    // Function to handle saving image (example, adjust as per your needs)
-    const saveImage = (image) => {
-        console.log(`Saved image: ${image}`);
-        // Add your logic for saving the image here
-    };
-
     return (
+
         <div>
+            <Navbar/>
             <div className='main'>
                 <div className="main-left">
                     <div>
@@ -71,9 +67,6 @@ const Home = () => {
                 <div className="imageRow">
                     {images.slice(3, 6).map((image, index) => (
                         <div key={index} className="imageContainer">
-                            <div className='Save' onClick={() => saveImage(image.src)}>
-                                <img src={save} alt='save' className='save'></img>
-                            </div>
                             <img className={`img${index + 4} ${image.inView[0] ? 'active' : ''}`} src={image.src} alt="" ref={image.ref} />
                         </div>
                     ))}
@@ -83,10 +76,10 @@ const Home = () => {
                         <strong>Black Shirt and Grey Pant Combination:</strong> Elevate your style with our sophisticated black shirt paired with sleek grey pants. This timeless combination exudes confidence and refinement, perfect for both casual outings and formal occasions. Embrace versatility and elegance with this classic ensemble that effortlessly transitions from day to night.
                     </p>
                     <p>
-                        <strong>Black Shirt and Black Pant:</strong> Embrace the allure of monochrome with our sleek black shirt and matching black pants. This effortlessly chic combination epitomizes modern sophistication, offering a sleek and polished look that never goes out of style. Whether for a professional setting or a night out on the town, this ensemble exudes confidence and sophistication.
+                    <strong>Black Shirt and Sandal Pant:</strong> Embrace laid-back sophistication with our stylish black shirt paired with trendy sandal pants. This effortlessly cool combination offers a relaxed yet refined aesthetic, perfect for casual gatherings or weekend outings. Add a touch of effortless style to your wardrobe with this versatile ensemble that captures the essence of modern fashion.
                     </p>
                     <p>
-                        <strong>Black Shirt and Sandal Pant:</strong> Embrace laid-back sophistication with our stylish black shirt paired with trendy sandal pants. This effortlessly cool combination offers a relaxed yet refined aesthetic, perfect for casual gatherings or weekend outings. Add a touch of effortless style to your wardrobe with this versatile ensemble that captures the essence of modern fashion.
+                    <strong>Black Shirt and Black Pant:</strong> Embrace the allure of monochrome with our sleek black shirt and matching black pants. This effortlessly chic combination epitomizes modern sophistication, offering a sleek and polished look that never goes out of style. Whether for a professional setting or a night out on the town, this ensemble exudes confidence and sophistication. 
                     </p>
                 </div>
             </div>

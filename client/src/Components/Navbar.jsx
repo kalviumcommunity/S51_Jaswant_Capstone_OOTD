@@ -28,25 +28,17 @@ const Navbar = ({ isLoggedIn, setIsLoggedIn }) => {
                     <Link to="/features" className="nav-link">Combinations</Link>
                 </li>
                 <li className="nav-item">
-
-
-
-                    <div class="dropdown">
-                        <div class="dropdown-toggle">
-                            <div class="line"></div>
-                            <div class="line"></div>
-                            <div class="line"></div>
-                        </div>
-                        <div class="dropdown-menu">
-                            <Link to="/Login" className="nav-link">Login</Link>
-                            <br />
-                            <hr />
-                            <Link to='/Saved' className="nav-link">Saved</Link>
-                        </div>
-                    </div>
-
-
+                    <Link to="/" className="nav-link">Logout</Link>
                 </li>
+            
+
+
+
+                    
+                    {/* </div> */}
+
+
+                
             </ul>
 
         </nav>

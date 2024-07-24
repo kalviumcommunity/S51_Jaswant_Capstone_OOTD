@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import "./Signup.css"
+import "./Signup.css";
 import { Link, useNavigate } from 'react-router-dom';
-import axios from "axios"
+import axios from 'axios';
 
 function Signup({ setIsLoggedIn }) {
   const [email, setEmail] = useState('');
@@ -10,15 +10,18 @@ function Signup({ setIsLoggedIn }) {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    axios.post('http://localhost:3000/signup',{
-                name:email,
-                password:password
-            }).then((response)=>{
-              console.log(email, password);
-              setIsLoggedIn(true);
-              navigate("/");})
-              .catch((error)=>{console.error(error)});
-
+    axios.post('http://localhost:3000/signup', {
+      name: email,
+      password: password
+    })
+    .then((response) => {
+      console.log(email, password);
+      setIsLoggedIn(true);
+      navigate("/");
+    })
+    .catch((error) => {
+      console.error(error);
+    });
   };
 
   return (
@@ -45,7 +48,9 @@ function Signup({ setIsLoggedIn }) {
             required
           />
         </div>
+      <Link to="/home">
         <button type="submit" className="signup-button">Sign Up</button>
+      </Link>
       </form>
       <p>
         Already have an account? <Link to="/login">Login</Link>

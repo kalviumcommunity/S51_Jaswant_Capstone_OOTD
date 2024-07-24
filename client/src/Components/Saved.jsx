@@ -1,7 +1,9 @@
 import React from 'react'
 
-export const Saved = () => {
+function Saved() {
   return (
     <div>Saved</div>
   )
 }
+
+export default Saved

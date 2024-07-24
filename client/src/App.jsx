@@ -23,9 +23,10 @@ import { Red } from './Components/Combinations/Red';
 import { Green } from './Components/Combinations/Green';
 import { Blue } from './Components/Combinations/Blue';
 import { Brown } from './Components/Combinations/Brown';
-import { Saved } from './Components/Saved';
+import Saved  from './Components/Saved';
 import { Pink } from './Components/Combinations/Pink';
 import Feedback from './Components/Feedback';
+import Landing from './Components/Landing';
 // import Crisp  from './Components/Crisp';
 
 
@@ -33,9 +34,8 @@ const App = () => {
   const [IsLoggedIn, setIsLoggedIn] = useState(false);
     return (
       <Router>
-          <Navbar />
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="home" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/features" element={<Feature />} />
           <Route path="/login" element={<Login setIsLoggedIn={setIsLoggedIn} />} />
@@ -59,6 +59,10 @@ const App = () => {
           <Route path='/Pink' element={<Pink/>}/>
           <Route path='/Saved' element={<Saved/>}/>
           <Route path='/Feedback' element={<Feedback/>}/>
+          <Route path='/' element={<Landing/>}/>
+
+
+
 
           {/* <Route path='/Crisp' element={<Crisp/>}/> */}
           

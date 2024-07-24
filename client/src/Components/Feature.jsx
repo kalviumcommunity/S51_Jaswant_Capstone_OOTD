@@ -41,12 +41,14 @@ const Feature = () => {
                 <button className='combutton' onClick={() => handleButtonClick('Brown Combinations')}>
                     Brown Combinations
                 </button>
-            </Link> 
+            </Link>
             <Link to='/Pink'>
                 <button className='combutton' onClick={() => handleButtonClick('Pink Combinations')}>
                     Pink Combinations
                 </button>
             </Link> 
+        
+
             
                
             </div>
