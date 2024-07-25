@@ -2,6 +2,7 @@ import React, { useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useInView } from 'react-intersection-observer';
 import "./Home.css";
+import Navbar from './Navbar';
 import save from "../assets/savebtn.png";
 import image1 from '../assets/pic1.jpg';
 import image2 from '../assets/pic2.jpg';
@@ -48,6 +49,8 @@ const Home = () => {
 
     return (
         <div>
+        <Navbar />
+
             <div className='main'>
                 <div className="main-left">
                     <div>
@@ -97,33 +100,48 @@ const Home = () => {
                 <Link to='/White'>
                     <h1>White Outfit Combinations</h1>
                 </Link>
-                <div className='white-img'>
-                    {images.slice(6).map((image, index) => (
-                        <div key={index} className='imageContainer'>
-                            <img className={`img${index + 7} ${image.inView[0] ? 'active' : ''}`} src={image.src} alt="" ref={image.ref} />
-                        </div>
-                    ))}
-                </div>
-                <div className="description">
-                    <p>
-                        <strong>White Shirt and Light Blue Jeans:</strong> Embrace a timeless, casual look with our white shirt paired with light blue jeans. This combination exudes relaxed sophistication and is perfect for everyday wear or weekend outings.
-                    </p>
-                    <p>
-                        <strong>White Shirt and Dark Blue Pant:</strong> Elevate your style with our classic white shirt paired elegantly with dark blue pants. This versatile duo is suitable for both professional settings and evening occasions, offering a sleek and polished look.
-                    </p>
-                    <p>
-                        <strong>White Shirt and Black Pant:</strong> Make a bold statement with our white shirt paired with black pants. This classic monochrome ensemble is a wardrobe essential, ideal for formal events or stylish everyday wear.
-                    </p>
-                    <p>
-                        <strong>White Shirt and Olive Green Pant:</strong> Add a touch of earthy charm to your outfit with our white shirt and olive green pants combination. This pairing strikes a perfect balance between casual and refined, suitable for various day-to-day activities.
-                    </p>
-                    <p>
-                        <strong>White Shirt and Sand-colored Pant:</strong> Embrace a laid-back yet stylish vibe with our white shirt paired with sand-colored pants. This relaxed combination is perfect for outdoor gatherings or leisurely weekends, offering a fresh and contemporary look.
-                    </p>
+                <div className="container">
+  {images.slice(6).map((image, index) => (
+    <div key={index} className="item">
+      <div className="imageContainer">
+        <img className={`img${index + 7} ${image.inView[0] ? 'active' : ''}`} src={image.src} alt="" ref={image.ref} />
+      </div>
+      <div className="description">
+        {index === 0 && (
+          <p>
+            <strong>White Shirt and Light Blue Jeans:</strong> Embrace a timeless, casual look with our white shirt paired with light blue jeans. This combination exudes relaxed sophistication and is perfect for everyday wear or weekend outings.
+          </p>
+        )}
+        {index === 1 && (
+          <p>
+            <strong>White Shirt and Dark Blue Pant:</strong> Elevate your style with our classic white shirt paired elegantly with dark blue pants. This versatile duo is suitable for both professional settings and evening occasions, offering a sleek and polished look.
+          </p>
+        )}
+        {index === 2 && (
+          <p>
+            <strong>White Shirt and Black Pant:</strong> Make a bold statement with our white shirt paired with black pants. This classic monochrome ensemble is a wardrobe essential, ideal for formal events or stylish everyday wear.
+          </p>
+        )}
+        {index === 3 && (
+          <p>
+            <strong>White Shirt and Olive Green Pant:</strong> Add a touch of earthy charm to your outfit with our white shirt and olive green pants combination. This pairing strikes a perfect balance between casual and refined, suitable for various day-to-day activities.
+          </p>
+        )}
+        {index === 4 && (
+          <p>
+            <strong>White Shirt and Sand-colored Pant:</strong> Embrace a laid-back yet stylish vibe with our white shirt paired with sand-colored pants. This relaxed combination is perfect for outdoor gatherings or leisurely weekends, offering a fresh and contemporary look.
+          </p>
+        )}
+      </div>
+    </div>
+  ))}
+</div>
+
+
                     <Crisp /> {/* Assuming Crisp component for additional content */}
                 </div>
             </div>
-        </div>
+        
     );
 };
 

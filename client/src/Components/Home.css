@@ -237,13 +237,7 @@ div.main-right {
     transform: scale(1.1);
 }
 
-.white-img{
 
-    display: grid;
-    grid-template-columns: repeat(5,250px);
-    padding: 10px;
-    margin-left: 30px;
-}
 
 .main {
     display: flex;
@@ -285,25 +279,54 @@ div.main-right {
     gap: 10px;
 }
 
-.imageContainer {
-    position: relative;
-    width: calc(33.33% - 10px);
-}
+
 
 .Save {
     display: none; /* Initially hide the save button */
-    position: absolute;
+    position:relative;
     top: 5px; /* Adjust the positioning as needed */
     right: 10px; /* Adjust the positioning as needed */
     margin-right: 55px;
-    z-index: 1; /* Ensure the save button appears above the image */
 }
 
-.imageContainer:hover .Save {
-    display: block; /* Display the save button when the image container is hovered */
-}
+
 .save {
     width: 30px;
     height: 30px;
     cursor: pointer;
 }
+
+.container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px; /* Space between each image-description pair */
+  }
+  
+  .imageContainer {
+    margin-right: 20px; /* Space between image and description */
+  }
+  
+  @keyframes fadeInOut {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  p {
+    font-size: large;
+    font-weight: bold;
+    animation: fadeInOut 3s; /* Plays the animation once */
+  }
+  
+  

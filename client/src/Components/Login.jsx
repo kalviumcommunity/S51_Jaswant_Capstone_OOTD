@@ -68,7 +68,9 @@ function Login({setIsLoggedIn}) {
             required
           />
         </div>
+    <Link to="/Home">
         <button type="submit" className="login-button">Login</button>
+        </Link>
       </form>
      
       <div className="forgot-password">

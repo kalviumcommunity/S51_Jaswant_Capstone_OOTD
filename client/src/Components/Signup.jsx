@@ -45,7 +45,10 @@ function Signup({ setIsLoggedIn }) {
             required
           />
         </div>
+      <Link to="/Home">
         <button type="submit" className="signup-button">Sign Up</button>
+        </Link>
+      
       </form>
       <p>
         Already have an account? <Link to="/login">Login</Link>
