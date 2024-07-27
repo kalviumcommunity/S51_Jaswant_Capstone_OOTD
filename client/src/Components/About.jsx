@@ -1,10 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './About.css'; // Import the CSS file
+import Navbar from './Navbar';
 
 const About = () => {
     return (
+            
+      
         <div className="about-container">
+            <Navbar/>
             <h2 className="about-heading">About OOTD - Outfit of the Day</h2>
             <p className="about-paragraph">Welcome to OOTD - Outfit of the Day, your ultimate destination for effortless and personalized men's fashion advice. We understand that navigating through the world of fashion can sometimes be overwhelming, which is why we've created a platform dedicated to simplifying your style choices.</p>
             <p className="about-paragraph">At OOTD, we believe that every man deserves to look and feel his best, no matter the occasion. Whether you're gearing up for a casual day out, a formal event, or anything in between, we're here to provide tailored outfit suggestions that align with your unique preferences and characteristics.</p>
