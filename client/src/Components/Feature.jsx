@@ -1,6 +1,7 @@
 import React from 'react';
 import "./Feature.css";
 import { Link } from 'react-router-dom';
+import Navbar from './Navbar';
 
 const Feature = () => {
     const handleButtonClick = (category) => {
@@ -9,6 +10,7 @@ const Feature = () => {
 
     return (
         <div>
+            <Navbar/>
             <h2>Combinations</h2>
             <div className="color-buttons">
 
