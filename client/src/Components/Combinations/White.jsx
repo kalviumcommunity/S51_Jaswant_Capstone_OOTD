@@ -6,10 +6,12 @@ import image3 from '../../assets/whiteimage3.jpeg';
 import image4 from '../../assets/whiteimage4.jpeg';
 import image5 from '../../assets/whiteimage5.jpeg';
 import image6 from '../../assets/Whiteimage6.jpeg';
+import Navbar from '../Navbar';
 
 export const White = () => {
   return (
     <div className="combination-container">
+      <Navbar/>
       <img src={image1} alt="Image 1" className="combination-image" />
       <img src={image5} alt="Image 5" className="combination-image" />
       <img src={image3} alt="Image 3" className="combination-image" />
