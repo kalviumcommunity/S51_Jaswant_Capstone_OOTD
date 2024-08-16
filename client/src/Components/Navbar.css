@@ -11,7 +11,8 @@ body {
 
 .navbar {
     background-color: #012448f8; 
-    padding: 20px 0; 
+    padding: 20px; 
+
     display: flex;
     justify-content: space-evenly
 }

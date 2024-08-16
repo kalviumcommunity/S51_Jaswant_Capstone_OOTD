@@ -1,45 +1,44 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import land1 from "../assets/land1.jpg";
+import land2 from "../assets/land2.webp";
+import land3 from "../assets/land3.jpg";
+import land4 from "../assets/land4.jpg";
+import land5 from "../assets/land5.webp";
+
+const images = [land1, land2, land3, land4, land5];
 
 function LandingPage() {
   const [isSignInHovered, setIsSignInHovered] = useState(false);
   const [isSignUpHovered, setIsSignUpHovered] = useState(false);
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImageIndex(prevIndex => (prevIndex + 1) % images.length);
+    }, 3000); // Change image every 3 seconds
+
+    return () => clearInterval(interval);
+  }, []);
 
   return (
     <div style={{ fontFamily: 'Arial, sans-serif', textAlign: 'center' }}>
       {/* Navbar */}
-      <nav style={styles.navbar}>
-        <div style={styles.navBrand}>OOTD</div>
-        <div style={styles.navLinks}>
-          <Link to="/Login">
-            <button
-              style={isSignInHovered ? { ...styles.navButton, ...styles.navButtonHover } : styles.navButton}
-              onMouseEnter={() => setIsSignInHovered(true)}
-              onMouseLeave={() => setIsSignInHovered(false)}
-            > 
-              Sign In
-            </button>
-          </Link>
-          <Link to="/Signup">
-            <button
-              style={isSignUpHovered ? { ...styles.navButton, ...styles.navButtonHover } : styles.navButton}
-              onMouseEnter={() => setIsSignUpHovered(true)}
-              onMouseLeave={() => setIsSignUpHovered(false)}
-            >
-              Sign Up
-            </button>
-          </Link>
-        </div>
-      </nav>
+     
 
       {/* Hero Section */}
-      <header style={{ ...styles.heroSection, position: 'relative' }}>
-        
+      <header style={{ ...styles.heroSection, backgroundImage: `url(${images[currentImageIndex]})` }}>
         <div style={styles.heroContent}>
-          <h1 style={styles.heroTitle}>Welcome to Your OOTD</h1>
-          <p style={styles.heroSubtitle}>Discover your daily fashion inspiration.</p>
         </div>
       </header>
+      <div style={styles.heroContent}>
+  <h1 style={styles.heroTitle}>Welcome to Your OOTD</h1>
+  <p style={styles.heroSubtitle}>Discover your daily fashion inspiration.</p>
+  <Link to="/Login">
+  <button style={styles.exploreButton}>Explore Now</button>
+</Link>
+</div>
+
 
       {/* Features Section */}
       <section style={styles.featuresSection}>
@@ -60,10 +59,10 @@ function LandingPage() {
           <p style={styles.featureDescription}>Keep up with the latest in the fashion industry.</p>
         </div>
       </section>
+     
 
-      {/* Call to Action Section */}
-      
     </div>
+    
   );
 }
 
@@ -98,8 +97,13 @@ const styles = {
   heroSection: {
     position: 'relative',
     color: 'white',
-    padding: '100px 20px',
+    padding: '10px 20px',
+    height: '600px',
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+    transition: 'background-image 1s ease-in-out',
   },
+  
   heroContent: {
     maxWidth: '600px',
     margin: '0 auto',
@@ -131,16 +135,7 @@ const styles = {
     fontSize: '1.2em',
     color: '#666',
   },
-  ctaSection: {
-    backgroundColor: '#333',
-    color: 'white',
-    padding: '50px 20px',
-  },
-  ctaTitle: {
-    fontSize: '2em',
-    marginBottom: '20px',
-  },
-  ctaButton: {
+  exploreButton: {
     backgroundColor: '#ff6b6b',
     color: 'white',
     border: 'none',
@@ -148,7 +143,11 @@ const styles = {
     fontSize: '1.2em',
     cursor: 'pointer',
     borderRadius: '5px',
+    marginTop: '20px',
     transition: 'background-color 0.3s',
+  }, 
+  exploreButtonHover: {
+    backgroundColor: '#e55555',
   },
 };
 

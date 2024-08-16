@@ -5,9 +5,12 @@ import image2 from '../../assets/Pinkimg2.jpeg';
 import image3 from '../../assets/Pinkimg3.jpeg';
 import image4 from '../../assets/Pinkimg4.jpeg';
 import image6 from '../../assets/Pinkimg6.jpeg';
+import Navbar from '../Navbar';
+
 export const Pink = () => {
   return (
     <div className="combination-container"> 
+    <Navbar/>
       <img src={image1} alt="Image 1" className="combination-image" /> 
       <img src={image2} alt="Image 2" className="combination-image" />
       <img src={image3} alt="Image 3" className="combination-image" />
