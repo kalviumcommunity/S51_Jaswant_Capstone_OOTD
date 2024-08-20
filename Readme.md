@@ -28,3 +28,4 @@ Welcome to OOTD, your personal style advisor exclusively designed for men! This 
 If you have any questions, concerns, or need assistance with OOTD - Outfit of the Day, feel free to reach out to our support team. We're here to help!
 
 Backend Deployed link - https://s51-jaswant-capstone-ootd.onrender.com/
+Frontend Deployed link- https://66bee68cf1bcf7b7c70d608d--steady-tapioca-c41a19.netlify.app/
