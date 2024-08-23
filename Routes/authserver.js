@@ -16,6 +16,7 @@ signup.post('/signup',async (req, res) => {
          const accessToken = jwt.sign(hashedPassword,process.env.ACCESS_TOKEN_SECRET )
         res.status(201).json({message:"Signup successful",accessToken: accessToken});
     }catch(err){
+        console.log(err)
         res.status(500).json(err);
     }
 });
@@ -29,7 +30,7 @@ login.post('/login',async (req, res) => {
         const accessToken = jwt.sign(user.password,process.env.ACCESS_TOKEN_SECRET )
         res.json( {accessToken: accessToken})
     }else{
-        res.send('Wrong Password')
+        res.status(401).send('Wrong Password')
     }
    }catch(err){
     res.status(500).json(user);
