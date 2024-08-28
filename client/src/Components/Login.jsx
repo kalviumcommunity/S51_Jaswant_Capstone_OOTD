@@ -57,27 +57,7 @@ function Login({ setIsLoggedIn }) {
     }
   };
 
-  const google = async (e) => {
-    const provider = new GoogleAuthProvider();
-
-    function setCookie(name, value, daysToExpire) {
-      let date = new Date();
-      date.setTime(date.getTime() + daysToExpire * 24 * 60 * 60 * 1000);
-      document.cookie = name + '=' + value + ';expires=' + date.toUTCString() + ';path=/';
-    }
-
-    try {
-      const result = await signInWithPopup(auth, provider);
-      console.log(result);
-      setCookie('logedin', true, 365);
-      setCookie("username", result.user.displayName, 365);
-      setCookie('token', result.user.accessToken, 365);
-      setIsLoggedIn(true);
-      navigate('/home');
-    } catch (error) {
-      console.error(error.message);
-    }
-  };
+ 
 
   return (
     <div className="login-container">
