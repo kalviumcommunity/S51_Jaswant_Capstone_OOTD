@@ -2,9 +2,9 @@
 
 Welcome to OOTD, your personal style advisor exclusively designed for men! This website is designed to simplify your fashion choices by providing personalized outfit suggestions based on your appearance, height, skin tone, and chosen occasion.
 
-## How to Use OOTD
+## How to Use OOTD.
 
-### Getting Started:
+### Getting Started :
 - Visit the [OOTD website](#).
 - Create an account or log in if you already have one.
 - Input your appearance details, including body type, face shape, etc.
@@ -23,5 +23,6 @@ Welcome to OOTD, your personal style advisor exclusively designed for men! This 
 - Check our [Frequently Asked Questions](#) section for quick solutions to common queries.
 - If you encounter any issues, refer to the troubleshooting guide for assistance.
 
-### Contact Us:
-- For personalized support or specific inquiries, reach out to our support team through the provided contact information.
+## Contact Us
+
+If you have any questions, concerns, or need assistance with OOTD - Outfit of the Day, feel free to reach out to our support team. We're here to help!
