@@ -1,0 +1,68 @@
+.wardrobe-container {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 30px 24px;
+}
+
+.wardrobe-profile-card {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 28px 36px;
+  border-radius: 28px;
+  background-color: var(--bg-surface);
+  margin-bottom: 30px;
+  border: 1px solid var(--border-subtle);
+}
+
+.profile-avatar-lg {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--pinterest-red);
+}
+
+.profile-info h1 {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: var(--text-main);
+}
+
+.profile-info p {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}
+
+.wardrobe-tabs {
+  display: flex;
+  gap: 12px;
+  border-bottom: 1px solid var(--border-subtle);
+  padding-bottom: 14px;
+  margin-bottom: 24px;
+}
+
+.wardrobe-tab-btn {
+  padding: 10px 22px;
+  border-radius: var(--radius-pill);
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.wardrobe-tab-btn:hover {
+  color: var(--text-main);
+  background-color: var(--bg-surface-hover);
+}
+
+.wardrobe-tab-btn.active {
+  background-color: var(--text-main);
+  color: var(--text-dark);
+  border-color: var(--text-main);
+}

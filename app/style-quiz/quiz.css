@@ -1,0 +1,108 @@
+.quiz-container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 24px;
+}
+
+.quiz-card {
+  padding: 40px;
+  border-radius: 28px;
+  background-color: var(--bg-surface);
+  box-shadow: var(--shadow-pop);
+}
+
+.quiz-title-box {
+  text-align: center;
+  margin-bottom: 36px;
+}
+
+.quiz-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--accent-purple), var(--accent-cyan));
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 14px;
+  box-shadow: 0 0 20px rgba(139, 92, 246, 0.4);
+}
+
+.quiz-title-box h1 {
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--text-main);
+}
+
+.quiz-title-box p {
+  color: var(--text-muted);
+  font-size: 1rem;
+  margin-top: 6px;
+}
+
+.quiz-step-section {
+  margin-bottom: 28px;
+}
+
+.quiz-step-label {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--text-main);
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.option-pills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 12px;
+}
+
+.quiz-option-btn {
+  padding: 14px 18px;
+  border-radius: var(--radius-md);
+  background-color: #11141e;
+  border: 1px solid var(--border-subtle);
+  color: var(--text-muted);
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-align: center;
+  transition: all 0.2s ease;
+}
+
+.quiz-option-btn:hover {
+  border-color: rgba(255, 255, 255, 0.2);
+  color: var(--text-main);
+}
+
+.quiz-option-btn.selected {
+  background: linear-gradient(135deg, rgba(139, 92, 246, 0.2), rgba(6, 182, 212, 0.2));
+  border-color: var(--accent-purple);
+  color: white;
+  box-shadow: 0 0 14px rgba(139, 92, 246, 0.3);
+}
+
+.quiz-submit-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  padding: 16px;
+  border-radius: var(--radius-pill);
+  background: linear-gradient(135deg, var(--pinterest-red), #ff4b68);
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 800;
+  margin-top: 20px;
+  box-shadow: 0 6px 20px rgba(230, 0, 35, 0.4);
+  transition: all 0.2s ease;
+}
+
+.quiz-submit-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 28px rgba(230, 0, 35, 0.6);
+}
